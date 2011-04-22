@@ -23,12 +23,16 @@ $.fn.menu = function(options){
 	.mousedown(function(){
 		if (!m.menuOpen) { m.showLoading(); };
 	})	
-	.click(function(){
+	.mouseover(function(){
 		if (m.menuOpen == false) { m.showMenu(); }
 		else { m.kill(); };
 		return false;
-	});	
+	});
 };
+
+
+MenuInited=false;
+currentMenu=null;
 
 function Menu(caller, options){
 	var menu = this;
@@ -74,6 +78,7 @@ function Menu(caller, options){
 		$.each(allUIMenus, function(i){
 			if (allUIMenus[i].menuOpen) { allUIMenus[i].kill(); };	
 		});
+		currentMenu=null;
 	};
 	
 	this.kill = function(){
@@ -92,11 +97,13 @@ function Menu(caller, options){
 		$(document).unbind('keydown');
 	};
 	
+	//this.mouseout(this.kill);
+	
 	this.showLoading = function(){
 		caller.addClass(options.loadingState);
 	};
 
-	this.showMenu = function(){
+	this.showMenu = function(){		
 		killAllMenus();
 		if (!menu.menuExists) { menu.create() };
 		caller
@@ -186,8 +193,9 @@ function Menu(caller, options){
 						}, options.crossSpeed);					
 					}; 
 					break;
-			};			
+			};	
 		});
+	 currentMenu=this;
 	};
 	
 	this.create = function(){	
@@ -240,6 +248,37 @@ function Menu(caller, options){
 		menu.setPosition(container, caller, options);
 		menu.menuExists = true;
 	};
+	
+	this.contains = function(x,y){
+		var obj=container;
+		var offset=obj.offset();
+		var relX = x - offset.left;
+    var relY = y - offset.top;
+   if(relX>=0 && relY>=0 && relX<obj.width() && relY<obj.height()){
+		return true;
+	}
+	else{
+		obj=container.parent();
+		offset=obj.offset();
+		relX = x - offset.left;
+    relY = y - offset.top;
+		if(relX>=0 && relY>=0 && relX<obj.width() && relY<obj.height()){
+			return true;
+		}
+	}
+	return false;
+	};
+	
+	if(!MenuInited){
+		$(document).mousemove(function(e){
+			if(currentMenu!=null && currentMenu.menuOpen){
+					if(!currentMenu.contains(e.pageX,e.pageY)){
+						killAllMenus();
+					}
+			}
+		});
+		MenuInited=true;
+	}
 	
 	this.chooseItem = function(item){
 		menu.kill();
@@ -539,6 +578,8 @@ Menu.prototype.setPosition = function(widget, caller, options) {
 			height: referrer.height()
 		}).insertAfter(el);
 	};
+	
+	return helper;
 };
 
 
