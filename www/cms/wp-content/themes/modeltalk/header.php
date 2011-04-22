@@ -72,6 +72,7 @@
 			content: $('#nav-news').next().html(),
 			width: 160,
 		});
+		$('li.item:last').addClass('last');
     });
     </script>
 </head>
@@ -108,7 +109,7 @@
 				   	   <li><a href="#">视频展示</a></li>
 				   </ul>
 				   </div>
-				   <li class="item last" id="nav-news"><a href="#">名模动态</a></li>
+				   <li class="item" id="nav-news"><a href="#">名模动态</a></li>
 				   <div  class="hidden submenu">
 				   <ul>
 				   	   <li><a href="#">公司新闻动态</a></li>

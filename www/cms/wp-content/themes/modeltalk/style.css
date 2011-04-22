@@ -28,6 +28,7 @@ a{
 .clear{
     clear:both;
 }
+.last{border:0;}
 .hidden{
 	display:none;
 }

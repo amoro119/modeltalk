@@ -25,7 +25,7 @@ Date:		September 2008
 .fg-menu.fg-menu-scroll,
 .fg-menu ul.fg-menu-scroll { overflow: scroll;  overflow-x: hidden; }
 
-.fg-menu li { clear:both; float:left; width:100%; margin: 0; padding:0; border-bottom:1px solid #fff; }	
+.fg-menu li { clear:both; float:left; width:100%; margin: 0; padding:0; border-top:1px solid #fff; }	
 .fg-menu li li { font-size:1em; } /* inner li font size must be reset so that they don't blow up */
 
 .fg-menu-flyout ul ul { padding: .4em; }
@@ -74,9 +74,9 @@ Date:		September 2008
 .fg-menu a:link,
 .fg-menu a:visited,
 .fg-menu a:hover,
-.fg-menu a:active { float:left; width:100%; padding:.3em 3%; text-decoration:none; outline: 0 !important; }
+.fg-menu a:active { float:left; width:100%; padding:3px 0;text-decoration:none; outline: 0 !important; }
 
-.fg-menu a { border: 1px dashed transparent; }
+.fg-menu a { border: 0; }
 
 .fg-menu a.ui-state-default:link,
 .fg-menu a.ui-state-default:visited,
