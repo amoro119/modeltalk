@@ -1,0 +1,105 @@
+/*
+Theme Name: Modeltalk
+Theme URI: http://wordpress.org/
+Author: xtunes.cc
+*/
+
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+@import "fg.menu.css";
+*{
+  margin:0px;
+  padding:0px;
+  border:0px;
+}
+body{
+	font-family: Arial,Helvetica,sans-serif;
+    font-size:12px;
+    background: #f1f1f1 url('images/bg.gif') repeat-x 0 0;
+    
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+.clear{
+    clear:both;
+}
+.hidden{
+	display:none;
+}
+ul#nav li.last{
+	border:0;
+}
+#wrap{
+	margin:0 auto;
+    width:960px;
+    background: url('images/wrap-bg.png') no-repeat 0 0;    
+}
+#header{
+	height:107px;
+	padding-left:1px;
+	width:950px;
+}
+#content{
+	height:434px;
+	padding-left:1px;
+	width:950px;
+	overflow:hidden;
+}
+ul#nav{
+	background:#9b789f;
+	height:17px;
+	font-family: Microsoft Yahei,Arial,Helvetica,sans-serif;
+	margin-top:14px;
+}
+ul#nav li{
+	float:left;
+	color:#fff;
+	text-align:center;
+	width:157px;
+	border-right:1px solid #fff;
+}
+ul#nav li *{
+	color:#fff;
+}
+ul#nav .submenu li{
+	list-style:none;
+}
+#banner{
+	padding:28px 0 0 0px;
+}
+#footer{
+	padding-left:1px;
+	width:950px;
+	color:#999999;
+	padding-top:5px;
+	line-height:20px;
+}
+#footer a{
+	color:#999999;
+	text-decoration:underline;
+	font-size:10px;
+}
+#homeleft{
+	border-right:1px solid #000;
+}
+#homeleft img{
+	padding:7px;	
+}
+#home1{
+	border-right:1px solid #000;
+	border-bottom:1px solid #000;
+}
+#home2{
+	border-bottom:1px solid #000;
+}
+#home3{
+	border-right:1px solid #000;
+}
+#home1,#home2,#home3,#home4 img{
+	padding:7px 7px 5px 7px;
+}
