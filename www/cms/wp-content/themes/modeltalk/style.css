@@ -24,6 +24,7 @@ ul{
 }
 a{
 	text-decoration:none;
+	color:#999;
 }
 .clear{
     clear:both;
@@ -106,4 +107,13 @@ ul#nav .submenu li{
 }
 .main{
 	padding:7px;
+}
+.productlist li{
+	float:left;
+	padding:0 7px 7px 0;
+}
+.productlist li h1{
+	font-size:12px;
+	font-weight:normal;
+	text-align:center;
 }

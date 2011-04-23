@@ -94,13 +94,13 @@
 				   <li class="item" id="nav-promate"><a href="#">名模推荐</a></li>
 				   <div  class="hidden submenu">
 				   <ul>
-				   	   <li><a href="/bb霜/">BB霜</a></li>
-				   	   <li><a href="/洁面慕斯/">洁面慕丝</a></li>
-				   	   <li><a href="/3D水胶原/">3D水胶原</a></li>
-				   	   <li><a href="/矿泥净化面膜/">矿泥净化面膜</a></li>
+				   	   <li><a href="/bb霜">BB霜</a></li>
+				   	   <li><a href="/洁面慕斯">洁面慕丝</a></li>
+				   	   <li><a href="/3D水胶原">3D水胶原</a></li>
+				   	   <li><a href="/矿泥净化面膜">矿泥净化面膜</a></li>
 				   	</ul>
 				   </div>
-				   <li class="item" id="nav-product"><a href="#">名模商品</a></li>
+				   <li class="item" id="nav-product"><a href="/category/products">名模商品</a></li>
 				   <li class="item" id="nav-school" ><a href="#">名模学堂</a></li>
 				   <div  class="hidden submenu">
 				   <ul>
