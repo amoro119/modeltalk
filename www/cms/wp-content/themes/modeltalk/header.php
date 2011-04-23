@@ -72,7 +72,7 @@
 			content: $('#nav-news').next().html(),
 			width: 160,
 		});
-		$('li.item:last').addClass('last');
+		$('li.item:last').addClass('last');		
     });
     </script>
 </head>
@@ -83,21 +83,21 @@
 					<img src="/images/logo.gif" width="950" height="48" alt="Logo">
 				</div>
 				<ul  id="nav">
-				   <li class="item" id="nav-home"><a href="#">首页</a></li>
+				   <li class="item" id="nav-home"><a href="/">首页</a></li>
 				   <li class="item" id="nav-brand"><a href="#">名模品牌</a></li>
 				   <div class="hidden submenu">
 					   <ul>
-					   	   <li><a href="#">名模故事</a></li>
-					   	   <li><a href="#">品牌个性</a></li>
+					   	   <li><a href="/modelstory">名模故事</a></li>
+					   	   <li><a href="/brandcharacter">品牌个性</a></li>
 				   		</ul>
 			   		</div>
 				   <li class="item" id="nav-promate"><a href="#">名模推荐</a></li>
 				   <div  class="hidden submenu">
 				   <ul>
-				   	   <li><a href="#">BB霜</a></li>
-				   	   <li><a href="#">洁面慕丝</a></li>
-				   	   <li><a href="#">3D水胶原</a></li>
-				   	   <li><a href="#">矿泥净化面膜</a></li>
+				   	   <li><a href="/bb霜/">BB霜</a></li>
+				   	   <li><a href="/洁面慕斯/">洁面慕丝</a></li>
+				   	   <li><a href="/3D水胶原/">3D水胶原</a></li>
+				   	   <li><a href="/矿泥净化面膜/">矿泥净化面膜</a></li>
 				   	</ul>
 				   </div>
 				   <li class="item" id="nav-product"><a href="#">名模商品</a></li>

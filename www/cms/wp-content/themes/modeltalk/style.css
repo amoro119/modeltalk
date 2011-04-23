@@ -86,21 +86,24 @@ ul#nav .submenu li{
 	font-size:10px;
 }
 #homeleft{
-	border-right:1px solid #000;
+	border-right:1px solid #999999;
 }
 #homeleft img{
 	padding:7px;	
 }
 #home1{
-	border-right:1px solid #000;
-	border-bottom:1px solid #000;
+	border-right:1px solid #999999;
+	border-bottom:1px solid #999999;
 }
 #home2{
-	border-bottom:1px solid #000;
+	border-bottom:1px solid #999999;
 }
 #home3{
-	border-right:1px solid #000;
+	border-right:1px solid #999999;
 }
 #home1,#home2,#home3,#home4 img{
 	padding:7px 7px 5px 7px;
+}
+.main{
+	padding:7px;
 }
