@@ -4,7 +4,7 @@ if ("wp-config.php"){
 }else {
  exit("wp-config.php不存在，本文件需要上传到博客的根目录才能使用！");
 }
-
+echo dirname(__FILE__);
 //获取siteurl
 $filename = str_ireplace(dirname(__FILE__),'',__FILE__);
 $filename = str_ireplace("\\","/",$filename);

@@ -26,6 +26,9 @@ a{
 	text-decoration:none;
 	color:#999;
 }
+.pa{
+	position:absolute;
+}
 .clear{
     clear:both;
 }
@@ -64,6 +67,7 @@ ul#nav li{
 	text-align:center;
 	width:157px;
 	border-right:1px solid #fff;
+	height:17px;
 }
 ul#nav li *{
 	color:#fff;
@@ -107,6 +111,7 @@ ul#nav .submenu li{
 }
 .main{
 	padding:7px;
+	position:relative;
 }
 .productlist li{
 	float:left;
@@ -116,4 +121,22 @@ ul#nav .submenu li{
 	font-size:12px;
 	font-weight:normal;
 	text-align:center;
+}
+.item{
+	position:relative;
+}
+.menulink{
+	position:absolute;
+	z-index:99;
+	left:52px;
+}
+.newslist{
+	padding-bottom:20px;
+}
+.newslist li{
+	line-height:22px;
+}
+.newslist li h1{
+	font-size:12px;
+	font-weight:normal;
 }

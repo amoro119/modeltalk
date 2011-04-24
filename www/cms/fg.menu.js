@@ -25,7 +25,6 @@ $.fn.menu = function(options){
 	})	
 	.mouseover(function(){
 		if (m.menuOpen == false) { m.showMenu(); }
-		else { m.kill(); };
 		return false;
 	});
 };
@@ -113,7 +112,7 @@ function Menu(caller, options){
 		container.hide().slideDown(options.showSpeed).find('.fg-menu:eq(0)');
 		menu.menuOpen = true;
 		caller.removeClass(options.loadingState);
-		$(document).click(killAllMenus);
+		//$(document).click(killAllMenus);
 		
 		// assign key events
 		$(document).keydown(function(event){

@@ -101,18 +101,18 @@
 				   	</ul>
 				   </div>
 				   <li class="item" id="nav-product"><a href="/category/products">名模商品</a></li>
-				   <li class="item" id="nav-school" ><a href="#">名模学堂</a></li>
+				   <li class="item" id="nav-school"><a class="menulink" href="/category/school">名模学堂</a></li>
 				   <div  class="hidden submenu">
 				   <ul>
-				   	   <li><a href="#">F&Q</a></li>
-				   	   <li><a href="#">美容教学</a></li>
-				   	   <li><a href="#">视频展示</a></li>
+				   	   <li><a href="/category/fq">F&Q</a></li>
+				   	   <li><a href="/category/teaching">美容教学</a></li>
+				   	   <li><a href="/category/video">视频展示</a></li>
 				   </ul>
 				   </div>
-				   <li class="item" id="nav-news"><a href="#">名模动态</a></li>
+				   <li class="item" id="nav-news"><a class="menulink" href="#">名模动态</a></li>
 				   <div  class="hidden submenu">
 				   <ul>
-				   	   <li><a href="#">公司新闻动态</a></li>
+				   	   <li><a href="/category/news">公司新闻动态</a></li>
 				   	</ul>
 				   </div>
 				</ul>
