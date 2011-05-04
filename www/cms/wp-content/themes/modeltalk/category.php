@@ -7,7 +7,7 @@
 get_header(); ?>
 			<div id="content">
 				<div class="main">
-				<h1 class="title"><?php single_cat_title(); ?><h1>
+				<h1 class="title"><?php single_cat_title(); ?></h1>
 				<ul  class="newslist">
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 					<li>				

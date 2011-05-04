@@ -49,27 +49,27 @@
 	 */
 	wp_head();
 ?>
-<script type="text/javascript" src="/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
 <script type="text/javascript" src="/fg.menu.js"></script>
     	 <script type="text/javascript">    
     $(function(){      	
     	// MENUS    	
 		$('#nav-brand').menu({ 
-			content: $('#nav-brand').next().html(), // grab content from this page
+			content: '<ul><li><a href="/modelstory">名模故事</a></li><li><a href="/brandcharacter">品牌个性</a></li></ul>', // grab content from this page
 			width: 157
 		});
 		
 		$('#nav-promate').menu({
-			content: $('#nav-promate').next().html(),
+			content: '<ul><li><a href="/bb霜">BB霜</a></li><li><a href="/洁面慕斯">洁面慕丝</a></li><li><a href="/3D水胶原">3D水胶原</a></li><li><a href="/矿泥净化面膜">矿泥净化面膜</a></li></ul>',
 			width: 157
 		});
 		
 		$('#nav-school').menu({
-			content: $('#nav-school').next().html(),
+			content: '<ul><li><a href="/category/fq">F&Q</a></li><li><a href="/category/teaching">美容教学</a></li><li><a href="/category/video">视频展示</a></li></ul>',
 			width: 157
 		});
 		$('#nav-news').menu({
-			content: $('#nav-news').next().html(),
+			content: '<ul><li><a href="/category/news">公司新闻动态</a></li></ul>',
 			width: 160
 		});
 		$('li.item:last').addClass('last');		
@@ -85,35 +85,9 @@
 				<ul  id="nav">
 				   <li class="item" id="nav-home"><a href="/">首页</a></li>
 				   <li class="item" id="nav-brand"><a href="#">名模品牌</a></li>
-				   <div class="hidden submenu">
-					   <ul>
-					   	   <li><a href="/modelstory">名模故事</a></li>
-					   	   <li><a href="/brandcharacter">品牌个性</a></li>
-				   		</ul>
-			   		</div>
 				   <li class="item" id="nav-promate"><a href="#">名模推荐</a></li>
-				   <div  class="hidden submenu">
-				   <ul>
-				   	   <li><a href="/bb霜">BB霜</a></li>
-				   	   <li><a href="/洁面慕斯">洁面慕丝</a></li>
-				   	   <li><a href="/3D水胶原">3D水胶原</a></li>
-				   	   <li><a href="/矿泥净化面膜">矿泥净化面膜</a></li>
-				   	</ul>
-				   </div>
 				   <li class="item" id="nav-product"><a href="/category/products">名模商品</a></li>
-				   <li class="item" id="nav-school"><a class="menulink" href="#">名模学堂</a></li>
-				   <div  class="hidden submenu">
-				   <ul>
-				   	   <li><a href="/category/fq">F&Q</a></li>
-				   	   <li><a href="/category/teaching">美容教学</a></li>
-				   	   <li><a href="/category/video">视频展示</a></li>
-				   </ul>
-				   </div>
-				   <li class="item" id="nav-news"><a class="menulink" href="#">名模动态</a></li>
-				   <div  class="hidden submenu">
-				   <ul>
-				   	   <li><a href="/category/news">公司新闻动态</a></li>
-				   	</ul>
-				   </div>
+				   <li class="item" id="nav-school"><a href="#">名模学堂</a></li>
+				   <li class="item" id="nav-news"><a href="#">名模动态</a></li>
 				</ul>
 			</div>

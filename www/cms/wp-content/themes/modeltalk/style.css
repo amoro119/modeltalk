@@ -71,6 +71,7 @@ ul#nav li{
 	width:157px;
 	border-right:1px solid #fff;
 	height:17px;
+	line-height:17px;
 }
 ul#nav li *{
 	color:#fff;
@@ -124,18 +125,28 @@ ul#nav .submenu li{
 }
 .productlist li{
 	float:left;
-	padding:0 25px 10px 0;
+	padding:0 25px 20px 0;
+	width:150px;
+	overflow:hidden;
+	height:150px;
+	text-align:center;
 }
-.productlist li h1{
+.productlist li img{
+	_margin-bottom:5px;
+}
+.productlist li a{
 	font-size:12px;
 	font-weight:normal;
-	text-align:center;
 }
 .pagination{
 	position:absolute;
 	right:60px;
 	bottom:20px;
 	font-size:12px;
+	height:25px;
+}
+.pagination span,.pagination a{
+	display:inline-block;
 }
 .item{
 	position:relative;
