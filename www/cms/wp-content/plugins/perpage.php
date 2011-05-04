@@ -16,9 +16,9 @@ global $posts_per;
 	$query->parse_query($query_string);
 	
 	if ($query->is_category('news') ) {
-		$num = '3';
+		$num = '10';
 	} elseif ($query->is_category('products')) {
-		$num = '5';
+		$num = '10';
 	}
 	
 	if (isset($num)) {

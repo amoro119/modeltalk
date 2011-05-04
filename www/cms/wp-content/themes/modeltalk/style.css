@@ -39,6 +39,9 @@ a{
 ul#nav li.last{
 	border:0;
 }
+.pr{
+	position:relative;
+}
 #wrap{
 	margin:0 auto;
     width:960px;
@@ -112,15 +115,27 @@ ul#nav .submenu li{
 .main{
 	padding:7px;
 	position:relative;
+	width:935px;
+	height:420px;
+}
+.productlist{
+	margin:25px auto;
+	width:875px;
 }
 .productlist li{
 	float:left;
-	padding:0 7px 7px 0;
+	padding:0 25px 10px 0;
 }
 .productlist li h1{
 	font-size:12px;
 	font-weight:normal;
 	text-align:center;
+}
+.pagination{
+	position:absolute;
+	right:60px;
+	bottom:20px;
+	font-size:12px;
 }
 .item{
 	position:relative;
@@ -132,11 +147,23 @@ ul#nav .submenu li{
 }
 .newslist{
 	padding-bottom:20px;
+	padding-left:24px;
+	padding-top:20px;
 }
 .newslist li{
-	line-height:22px;
+	line-height:16px;
+		font-size:14px;
+		padding:4px 0;
 }
-.newslist li h1{
-	font-size:12px;
+.newslist li a{
 	font-weight:normal;
+	text-decoration:underline;
+	padding-left:5px;
+}
+.title{
+	font-size:16px;
+	font-family:Microsoft Yahei;
+	color:#cccccc;
+	padding-left:24px;
+	padding-top:10px;
 }

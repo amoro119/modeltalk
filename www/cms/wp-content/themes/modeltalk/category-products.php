@@ -6,7 +6,7 @@
 
 get_header(); ?>
 			<div id="content">
-				<div class="main">
+				<div class="main pr">
 				<ul  class="productlist">
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 					<li><a href="<?php the_permalink() ?>" target="_top"><?php the_post_thumbnail('thumbnail');?></a>				

@@ -101,7 +101,7 @@
 				   	</ul>
 				   </div>
 				   <li class="item" id="nav-product"><a href="/category/products">名模商品</a></li>
-				   <li class="item" id="nav-school"><a class="menulink" href="/category/school">名模学堂</a></li>
+				   <li class="item" id="nav-school"><a class="menulink" href="#">名模学堂</a></li>
 				   <div  class="hidden submenu">
 				   <ul>
 				   	   <li><a href="/category/fq">F&Q</a></li>

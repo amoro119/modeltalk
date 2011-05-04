@@ -2,6 +2,6 @@
  include(TEMPLATEPATH . '/single-common.php');
 } elseif( in_category( 'news' ) ) {
  include(TEMPLATEPATH . '/single-common.php');}
- elseif( in_category( 'school' ) ) {
+ else {
  include(TEMPLATEPATH . '/single-common.php');}
 ?>
