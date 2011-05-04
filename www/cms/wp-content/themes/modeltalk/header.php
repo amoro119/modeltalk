@@ -61,16 +61,16 @@
 		
 		$('#nav-promate').menu({
 			content: $('#nav-promate').next().html(),
-			width: 157,
+			width: 157
 		});
 		
 		$('#nav-school').menu({
 			content: $('#nav-school').next().html(),
-			width: 157,
+			width: 157
 		});
 		$('#nav-news').menu({
 			content: $('#nav-news').next().html(),
-			width: 160,
+			width: 160
 		});
 		$('li.item:last').addClass('last');		
     });
