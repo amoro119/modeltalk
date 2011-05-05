@@ -49,32 +49,25 @@
 	 */
 	wp_head();
 ?>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
-<script type="text/javascript" src="/fg.menu.js"></script>
-    	 <script type="text/javascript">    
-    $(function(){      	
-    	// MENUS    	
-		$('#nav-brand').menu({ 
-			content: '<ul><li><a href="/modelstory">名模故事</a></li><li><a href="/brandcharacter">品牌个性</a></li></ul>', // grab content from this page
-			width: 157
-		});
-		
-		$('#nav-promate').menu({
-			content: '<ul><li><a href="/bb霜">BB霜</a></li><li><a href="/洁面慕斯">洁面慕丝</a></li><li><a href="/3D水胶原">3D水胶原</a></li><li><a href="/矿泥净化面膜">矿泥净化面膜</a></li></ul>',
-			width: 157
-		});
-		
-		$('#nav-school').menu({
-			content: '<ul><li><a href="/category/fq">F&Q</a></li><li><a href="/category/teaching">美容教学</a></li><li><a href="/category/video">视频展示</a></li></ul>',
-			width: 157
-		});
-		$('#nav-news').menu({
-			content: '<ul><li><a href="/category/news">公司新闻动态</a></li></ul>',
-			width: 160
-		});
-		$('li.item:last').addClass('last');		
+<script type="text/javascript">    
+    jQuery(function(){
+		jQuery('.menu-header > ul > li:last').css('border','0');
+		jQuery('.menu-header > ul > li:last >ul li').css('width','160');
+		jQuery('.menu-header > ul > li:last >ul li a').css('width','160');
     });
+ 
     </script>
+<!--[if lte IE 6]> 
+<script type="text/javascript">    
+jQuery(function(){
+	jQuery('.menu-header > ul > li').hover(function(){
+		jQuery(this).find('> ul').toggle();
+    });
+});
+ 
+</script>
+<![endif]--> 
+    
 </head>
 	<body>
 		<div id="wrap">
@@ -82,12 +75,8 @@
 				<div id="banner">
 					<img src="/images/logo.gif" width="950" height="48" alt="Logo">
 				</div>
-				<ul  id="nav">
-				   <li class="item" id="nav-home"><a href="/">首页</a></li>
-				   <li class="item" id="nav-brand"><a href="#">名模品牌</a></li>
-				   <li class="item" id="nav-promate"><a href="#">名模推荐</a></li>
-				   <li class="item" id="nav-product"><a href="/category/products">名模商品</a></li>
-				   <li class="item" id="nav-school"><a href="#">名模学堂</a></li>
-				   <li class="item" id="nav-news"><a href="#">名模动态</a></li>
-				</ul>
+				<div id="access" role="navigation">
+				<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
+				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+				</div><!-- #access -->
 			</div>

@@ -7,7 +7,6 @@ Author: xtunes.cc
 
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
-@import "fg.menu.css";
 *{
   margin:0px;
   padding:0px;
@@ -32,7 +31,7 @@ a{
 .clear{
     clear:both;
 }
-.last{border:0;}
+
 .hidden{
 	display:none;
 }
@@ -58,27 +57,7 @@ ul#nav li.last{
 	width:950px;
 	overflow:hidden;
 }
-ul#nav{
-	background:#9b789f;
-	height:17px;
-	font-family: Microsoft Yahei,Arial,Helvetica,sans-serif;
-	margin-top:14px;
-}
-ul#nav li{
-	float:left;
-	color:#fff;
-	text-align:center;
-	width:157px;
-	border-right:1px solid #fff;
-	height:17px;
-	line-height:17px;
-}
-ul#nav li *{
-	color:#fff;
-}
-ul#nav .submenu li{
-	list-style:none;
-}
+
 #banner{
 	padding:28px 0 0 0px;
 }
@@ -177,4 +156,86 @@ ul#nav .submenu li{
 	color:#cccccc;
 	padding-left:24px;
 	padding-top:10px;
+}
+/* =Menu
+-------------------------------------------------------------- */
+
+#access {
+    background:#9b789f;
+    display: block;
+    float: left;
+    margin-top: 14px;
+    width: 950px;
+    height:18px;
+    font-family: Microsoft Yahei,Arial,Helvetica,sans-serif;
+}
+#access .menu-header,
+div.menu {
+    font-size: 12px;
+}
+#access .menu-header ul,
+div.menu ul {
+    list-style: none;
+    margin: 0;
+}
+#access .menu-header li,
+div.menu li {
+    float: left;
+    position: relative;
+    text-align:center;
+	width:157px;
+	border-right:1px solid #fff;
+}
+#access a {
+    color: #fff;
+    display: block;
+    line-height: 18px;
+    text-decoration: none;
+}
+#access ul ul {
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+    display: none;
+    position: absolute;
+    top: 17px;
+    left: 0;
+    float: left;
+    z-index: 99999;
+        background:#bfa5c2;
+}
+#access ul ul li {
+    min-width: 157px;
+    border-top:1px solid #fff;
+    border-right:0 !important;
+}
+#access ul ul ul {
+    left: 100%;
+    top: 0;
+}
+#access ul ul a {
+    padding: 2px 0;
+    width: 157px;
+    height: auto;
+}
+
+#access ul ul :hover > a {
+    background:#d0b5d3;
+    color: #fff;
+}
+#access ul li:hover > ul {
+    display: block;
+}
+#access ul li.current_page_item > a,
+#access ul li.current-menu-ancestor > a,
+#access ul li.current-menu-item > a,
+#access ul li.current-menu-parent > a {
+    color: #fff;
+}
+* html #access ul li.current_page_item a,
+* html #access ul li.current-menu-ancestor a,
+* html #access ul li.current-menu-item a,
+* html #access ul li.current-menu-parent a,
+* html #access ul li a:hover {
+    color: #fff;
 }
